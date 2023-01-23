@@ -1,4 +1,4 @@
-printf collaboratory project between Steve Ojonuba Ojata and Queendaline Nnaji Chisom (0x11. C - printf team project)(https://github.com/Queendaline24)                           
+Contributor: [Queendaline Nnaji Chisom](https://github.com/Queendaline24)                          
 I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 Write a function that produces output according to a format.
 
