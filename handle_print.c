@@ -39,14 +39,14 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		if (fmt[*ind] == '\0')
 			return (-1);
 		unknown_len += write(1, "%%", 1);
-		if (fmt[*ind - 1] == '')
+		if (fmt[*ind - 1] == ' ')
 			unknown_len += write(1, "", 1);
 		else if (width)
 		{
 			--(*ind);
-			while (fmt[*ind] != '' &&fmt[*ind] != '%')
+			while (fmt[*ind] != ' ' &&fmt[*ind] != '%')
 				--(*ind);
-			if (fmt[*ind] == '')
+			if (fmt[*ind] == ' ')
 				--(*ind);
 			return (1);
 		}
