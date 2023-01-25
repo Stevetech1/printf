@@ -14,7 +14,7 @@ int main(void)
 	unsigned int ui;
 	void *addr;
 
-	len2 = _printf("Let's try to printf a simple sentence.\n");
+	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
 	addr = (void *)0x7ffe637541f0;
@@ -37,8 +37,8 @@ int main(void)
 	len = _printf("Percent:[%%]\n");
 	len2 = printf("Percent:[%%]\n");
 	_printf("Len:[%d]\n", len);
-	printf("Len:[%d]\n", len2);
-	_printf("Unknown:[%r]\n");
-	printf("Unknown:[%r]\n");
+	printf("Len2:[%d]\n", len2);
+	_printf("Unknown:[]\n");
+	printf("Unknown:[]\n");
 	return (0);
 }
